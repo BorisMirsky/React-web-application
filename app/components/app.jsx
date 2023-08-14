@@ -25,20 +25,23 @@ const App = () => {
    return(
       <div>
 		   <div className="container">
-			   <h3 style={{backgroundColor: `#f0ffff`}}>CRUD App with hooks & localStorage </h3>
+			   <h3 style={{
+				   backgroundColor: `#f0ffff`
+				   }}
+				>CRUD App with hooks & localStorage </h3>
 				   <div className="flex-row">
 					   <div 
 						   className="flex-large" 
 						   style={{backgroundColor: `#dcdcdc`}}
 					   >
-						   <h4>Add task to localStorage</h4>
+						   <h4 style={{marginTop:50,marginLeft:50}}>Add task to localStorage</h4>
 						   <AddTaskForm addTask={addTask} />
 					   </div>
 					   <div 
 						   className="flex-large"
 						   style={{backgroundColor: `#f0ffff`}}
 					   >
-						   <h4>View all tasks</h4>
+						   <h4 style={{marginTop:50,marginLeft:50}}>View all tasks</h4>
 						   <TaskTable tasks={tasks} deleteTask={deleteTask}/>
 					   </div>
 			   </div>

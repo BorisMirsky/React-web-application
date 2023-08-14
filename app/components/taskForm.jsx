@@ -54,14 +54,16 @@ const AddTaskForm = props => {
   
   return (
       <div>
-    <form>
-	     <label>Send request to json API & get response</label>
+    <form  style={{marginTop:10,marginBottom:10,marginRight:10,marginLeft:50}}>
+	     <label>Send request & get response&nbsp;&nbsp;&nbsp;</label>
 	     <button type="button" onClick={() => getData()} >
 		 get data
 		 </button>	
 	</form>		  
-    <form onSubmit={handleSubmit}>
-      <label>taskId</label>
+    <form 
+	     onSubmit={handleSubmit}
+	     style={{marginTop:30,marginBottom:30,marginLeft:30}}>
+      <label>taskId&nbsp;&nbsp;</label>
       <input 
 		  type="text" 
 		  name="taskId" 
@@ -69,7 +71,7 @@ const AddTaskForm = props => {
 		  onChange={handleInputChange}
 		  required
 	  />
-	 <label>title</label>
+	 <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title&nbsp;&nbsp;</label>
       <input 
 	     type="text"
 	     name="title" 
@@ -77,7 +79,7 @@ const AddTaskForm = props => {
 		 onChange={handleInputChange}
 		 required
 		 />
-      <button>Add new task</button>
+      <button style={{marginLeft:30,marginBottom:30}}>Add new task</button>
     </form>
 	</div>
   )

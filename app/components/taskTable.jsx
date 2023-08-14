@@ -39,12 +39,12 @@ const TaskTable = props => {
    const localStorageLength	= localStorage.length;
    
    return (
-   <table>
+   <table style={{marginTop:50,marginBottom:50,marginRight:50,marginLeft:50}}>
     <thead>
-      <tr>
-        <th>title</th>
-        <th>taskid</th>
-        <th>Delete</th>
+      <tr style={{marginRight:50,marginLeft:50}}>
+        <th>title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <th>taskid&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <th>Delete&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
 		<th>Done</th>
       </tr>
     </thead>
